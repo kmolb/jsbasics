@@ -14,13 +14,13 @@ console.log('type of2:', typeof foo2);
 */
 
 
-function sum(value1, value2) {
-    if (typeof value1 == "number" && typeof value2 == "number"){
-        return value1 + value2;
+function sum(value1, value2) {   //funkcja dodawania 
+    if (typeof value1 == "number" && typeof value2 == "number"){   // określenie typeof jako wartości liczbowej
+        return value1 + value2; // z sumowanie var1 i var2 jeśli są to wartości liczbowe
     }   else {
-        return "Arguments are not numbers"
+        return "Arguments are not numbers"  // komentarz jeśli nie jest spełniony warunek
     }
 
 }
 
-console.log(sum(3,"boo"));
+console.log(sum(3,22)); 
