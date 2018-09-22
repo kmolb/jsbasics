@@ -1,15 +1,15 @@
-var num = 1;
-var stringNum = "2";
-var stringNotNumber = "Hello world"
-console.log(Number(stringNotNumber)); //Nan
+//ES5:
+var foo = "foo"; // var(zmienna) wartość dostępna na starcie, wielokrotne użycie, możliwość napisania
+var foo = "hello";
 
-var constructorNum = Number(stringNum);
 
-console.log(num + stringNum); //12
-console.log(num + Number(stringNum)); //3
-console.log(num + constructor);
+//ES6 only:
+let baz = "Boo"; //let (zmienna) przewidywalny zakres wykożystania, lepsza od var
+{
+    let baz = "Booze";
 
-var array1 = [ ];
-var array2 = [ ];
+    console.log(baz);
+}
+console.log(baz);
 
-console.log(array1 + array2);
+const BAR = "I'm Batman";
