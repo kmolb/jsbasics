@@ -23,4 +23,5 @@ function sum(value1, value2) {   //funkcja dodawania
 
 }
 
-console.log(sum(3,22)); 
+console.log(sum(3,22)); //25
+console.log(sum(3,"text")); //25
