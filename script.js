@@ -1,15 +1,26 @@
-//ES5:
-var foo = "foo"; // var(zmienna) wartość dostępna na starcie, wielokrotne użycie, możliwość napisania
-var foo = "hello";
-
-
-//ES6 only:
-let baz = "Boo"; //let (zmienna) przewidywalny zakres wykożystania, lepsza od var
-{
-    let baz = "Booze";
-
-    console.log(baz);
+// whatTypeIsIt("foo") 
+/*
+function foo(element) {
+    return element;
 }
-console.log(baz);
 
-const BAR = "I'm Batman";
+
+console.log('type of:', typeof foo);
+
+
+const foo2 = (arg) => arg;
+
+console.log('type of2:', typeof foo2);
+*/
+
+
+function sum(value1, value2) {
+    if (typeof value1 == "number" && typeof value2 == "number"){
+        return value1 + value2;
+    }   else {
+        return "Arguments are not numbers"
+    }
+
+}
+
+console.log(sum(3,"boo"));
